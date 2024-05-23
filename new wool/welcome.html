@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="welcome.js"></script>
+    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <title>Background Change Automatic - Sagar Developer</title>
+    <style>
+        body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-image: url(welcome.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url('bg2.jpg');
+    }
+    20%
+    {
+        background-image: url('rainbow3.jpg');
+    }
+    40%
+    {
+        background-image: url('bg1.png');
+    }
+    50%
+    {
+        background-image: url('rainbow4.jpg');
+    }70%
+    {
+        background-image: url('rainbow6.png');
+    }100%
+    {
+        background-image: url('rainbow8.jpg');
+    }
+}body{
+    background-color: rgb(188, 180, 180);
+    text-align: right;
+    
+}a{
+    display: inline-block;
+}
+    </style>
+</head>
+
+<body>
+
+
+
+  
+  <button style="background-color: #c0f872; width: 10rem;">  <a href="index.html"><big>sign in</big></a></button>
+    
+
+   <div class="Section_top">
+       <div class="content">
+           <h1>Byte <span>Builders</span></h1>
+           <div id="id5">
+            <div class="search">
+           <input id="id3" type="text"  placeholder=" Search" autocomplete="on">
+           <span id="searchsymbol">
+           <span class="material-symbols-outlined">
+            search
+            
+            </span>
+        </span>
+        </div>
+           <div id="id4"></div>
+        </div>
+       </div>
+    </div>
+
+</body>
+
+</html>

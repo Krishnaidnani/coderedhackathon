@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Tutorials</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-image: url('FORMBG(1).jpg')">
+    
+    <div class="hero">
+
+      <form>
+        <h1>Enter your details below</h1><br>
+        <div class="input-group">
+            <input typer="text" id="name" required>
+            <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+            <input type="file" id="number" accept="image/*" capture="user" required>
+            <label for="number">              </label>
+        </div>
+        <div class="input-group">
+            <input typer="text" id="weight" required>
+            <label for="weight">Estimated weight</label>
+        </div>
+        <div class="input-group">
+            <textarea  id="message"  rows="8"></textarea>
+            <label for="message">your message</label>
+        </div>
+          <button type="submit" id="submit" onclick="window.location.href ='/thankyou.html' ">SUBMIT</button>
+        
+
+
+
+      </form>
+        
+
+    </div>
+</body>
+</html>

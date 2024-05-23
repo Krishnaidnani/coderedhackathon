@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="style.css">
+    <title>About Us</title>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+	
+	color: rgb(0, 0, 0);
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px auto;
+	padding: 0 20px;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fdffff;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin-right: 20px;
+}
+
+.nav-links a {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	background-color: #c9dcec;
+	border-radius: 4px;
+	color: white;
+}
+
+/* About Section */
+
+.about {
+	background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(221, 238, 243) 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 1rem;
+	color: #323030;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: rgb(15, 32, 111);
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #a7abb7;
+}
+
+/* Team Section */
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+    color: #000000;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* Footer */
+footer {
+	background-color: #d2e9fb;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+	nav {
+		display: block;
+	}
+
+	.logo {
+		text-align: center;
+	}
+
+	.nav-links {
+		margin-top: 1rem;
+		justify-content: space-between;
+	}
+
+	.nav-links li {
+		margin-right: 0;
+	}
+
+	.about h1 {
+		font-size: 2rem;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+	.about-info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about-img {
+		width: 60%;
+		height: 60%;
+		margin-bottom: 1rem;
+	}
+
+	.about-info p {
+		margin: 1rem 2rem;
+	}
+
+	.about-info button {
+		margin: 1rem 2rem;
+		width: 10rem;
+	}
+
+	.team {
+		margin: 0 1rem;
+	}
+}
+
+    </style>
+</head>
+ 
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <small style="text-align: center;">BYTE Builders</small>
+              </div>
+            <ul class="nav-links">
+                <li><a href="changingbg.html">
+                  Home</a>
+                  </li>
+                <li><a href="#">
+                  About</a>
+                  </li>
+                <li><a href="#">
+                  Services</a>
+                  </li>
+                <li><a href="#">
+                  Contact</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="about">
+        <h1>About Us</h1>
+        <p style="font-weight: bold;color: #f10d0d;">
+            "Woven with Quality, Styled with Comfort: Explore Wool's World with Us!"
+          </p>
+        <div class="about-info">
+            
+            <div>
+            <p> <small><i>"At BYTE Builders, we go beyond offering premium wool products. Our platform also provides comprehensive analysis and comparison tools, empowering you to make informed purchasing decisions. Whether you're exploring different wool types, comparing prices, or evaluating product features, our expert insights streamline your shopping experience. With meticulous research and unbiased assessments, we ensure transparency and clarity in every comparison. Trust us to help you navigate the vast world of wool with confidence and clarity. Discover the perfect wool product tailored to your needs, backed by our thorough analysis. Welcome to a smarter way to shop for wool, where knowledge meets comfort seamlessly."
+            </small>  </p>
+                <button>Read More...</button>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="team">
+        <h1>Meet Our Team</h1>
+        <div class="team-cards">
+           
+            <!-- Cards here -->
+            <!-- Card 1 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230824122630/
+ business-office-business-woman-professional.jpg" alt="User 1">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Lokesh</h2>
+                    <p class="card-role">Product owner</p>
+                    <p class="card-email">eng22ct0012@dsu.edu.in</p>
+                   <a href="mailto:eng22ct0012@dsu.edu.in"> <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+ 
+            <!-- Card 2 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822183347/
+ man-portrait-businessman-male.jpg" alt="User 2">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Khyati</h2>
+                    <p class="card-role">Product tester</p>
+                    <p class="card-email">khyatimr@gmail.com</p>
+                    <a href="mailto:khyatimr@gmail.com" ><p><button class="button">Contact</button></p>
+                
+                </div>
+            </div>
+           
+            <!-- Card 3 -->
+           
+            <div class="card">
+                <div class="card-img">
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230824122630/
+ business-office-business-woman-professional.jpg" alt="User 3">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Abhi Ram</h2>
+                    <p class="card-role">Srum master</p>
+                    <p class="card-email">abhiramm78@gmail.com</p>
+                    <a href="mailto:abhiramm78@gmail.com" ><p><button class="button">Contact</button></p>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <footer>
+        <p>© 2023 GeeksforGeeks. All Rights Reserved.</p>
+    </footer>
+</body>
+ 
+</html>

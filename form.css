@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+     box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0,0,0, 0.2) url("krishna.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}#submit{
+    background-color: rgb(2, 69, 48);
+    color: rgb(217, 246, 168);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}H1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+form{
+    width:90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position:relative;
+
+}
+input, textarea{
+    width:100%;
+    padding:10px;
+    box-shadow: 2px 3px 5px darkgreen;
+    border-radius: 2rem;
+    outline:0;
+    border: 1px solid #1a1a1a;
+    color: #2c2a2a;
+    background-color: rgb(223, 244, 205);
+    font-size: 15px;
+}
+label{
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    color: #1b1818;
+    cursor:text;
+
+}
+button{
+    padding: 10px 0;
+    color: #222020;
+    outline:none;
+    background: transparent;
+    border: 1px solid #2d2b2b;
+    width: 100%;
+    cursor:pointer;
+}

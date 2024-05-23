@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="dashboard.css">
+
+
+<style>
+    #myheader{
+
+    }
+  
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 60%;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }#dashboard{
+      width: 40%;
+      border-radius: 50%;
+    }#coin{
+      padding: 1%;
+      border-bottom: 3%;
+      font-size:20px;
+      position: relative;
+    
+    }#heading{
+      font-family:monospace;
+      font-size: 25px;
+      
+      
+    
+    }input{
+      outline: none;
+      border: none;
+     box-shadow: 2px 2px 5px grey;
+     border-radius: 6px;
+    }
+    
+    .title {
+      color: rgb(128, 128, 128);
+      font-size: 18px;
+    }a{
+        padding-left: 1rem;
+    }
+    
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 15px;
+      color: rgb(255, 255, 255);
+      background-color: #3a6b48;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+    button:hover, a:hover {
+      opacity: 1;
+      box-shadow: 5px 5px 7px rgb(106, 235, 235)
+    }
+    </style>
+</head>
+<body>
+
+<h1><BIG>DASHBOARD</BIG></h1><BR>
+
+<div id="card">
+  <img src="https://i.pinimg.com/236x/ee/cd/be/eecdbe232b5e579a9c62791f200e8a74.jpg" alt="John" id="dashboard">
+ <u><h2 id="myheader">WAZEER ALI KHAN</h2></u>
+  <p class="title"></p>
+  <p><big style="color: rgb(123, 111, 134);">Environment enthusiast</big></p><br>
+  <p id="phno" style="color: rgb(123, 111, 134);">123-456-890</p>
+  <br><p id="email"style="color: rgb(123, 111, 134);">wazeer@gmail.com</p><br><br>
+  <form style="justify-content: center;">
+    <label for="coins" id="heading">coins :</label>
+    <input  id="coin1" value="500" disabled><br><br>
+    <label for="coins" id="heading">weight : </i></label>
+    <input type="text" id="coin2" value="500" disabled><br><br>
+    <label for="coins"id="heading">location : </label>
+    <input type="text" id="coin3" value="500" disabled>
+  </form>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <a href="form.html"><p><button><BIG><b>CLICK HERE TO RECYCLE YOUR WASTE</b></BIG> </button></p></a>
+</div>
+<script>
+    
+    fetch('/api/dashboard')
+    .then(response=>response.json())
+    .then((users)=>{console.log(users.id[users.id.length-1]);
+        myheader.innerHTML=users.id[users.id.length-1].Name
+        phno.innerHTML=users.id1[users.id.length-1].PhoneNumber
+        email.innerHTML=users.id1[users.id.length-1].Email
+        document.getElementById('coin1').value=users.id[users.id.length-1].id
+        document.getElementById('coin1').value=users.id[users.id.length-1].coins
+        document.getElementById('coin2').value=users.id[users.id.length-1].weight
+        document.getElementById('coin3').value=users.id1[users.id.length-1].location})
+
+</script>
+</body>
+</html>
